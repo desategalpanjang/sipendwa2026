@@ -162,6 +162,23 @@
                             <div><label class="text-xs text-slate-500">No. KK</label><input type="number" name="no_kk" class="w-full border rounded-lg px-3 py-2 text-sm outline-none focus:border-pemda-blue" required></div>
                             <div><label class="text-xs text-slate-500">NIK</label><input type="number" name="nik" class="w-full border rounded-lg px-3 py-2 text-sm outline-none focus:border-pemda-blue" required></div>
                             <div><label class="text-xs text-slate-500">Nama Lengkap</label><input type="text" name="nama" class="w-full border rounded-lg px-3 py-2 text-sm outline-none focus:border-pemda-blue" required></div>
+                            
+                            <!-- TAMBAHAN: Status Keluarga & Status Kawin -->
+                            <div class="grid grid-cols-2 gap-2">
+                                <div><label class="text-xs text-slate-500">Status dlm Keluarga</label>
+                                    <select name="status_keluarga" class="w-full border rounded-lg px-3 py-2 text-sm">
+                                        <option value="Kepala Keluarga">Kepala Keluarga</option><option value="Suami">Suami</option><option value="Istri">Istri</option>
+                                        <option value="Anak">Anak</option><option value="Menantu">Menantu</option><option value="Cucu">Cucu</option>
+                                        <option value="Orang Tua">Orang Tua</option><option value="Mertua">Mertua</option><option value="Famili Lain">Famili Lain</option><option value="Lainnya">Lainnya</option>
+                                    </select>
+                                </div>
+                                <div><label class="text-xs text-slate-500">Status Perkawinan</label>
+                                    <select name="status_kawin" class="w-full border rounded-lg px-3 py-2 text-sm">
+                                        <option value="Belum Kawin">Belum Kawin</option><option value="Kawin">Kawin</option><option value="Cerai Hidup">Cerai Hidup</option><option value="Cerai Mati">Cerai Mati</option>
+                                    </select>
+                                </div>
+                            </div>
+
                             <div class="grid grid-cols-2 gap-2">
                                 <div><label class="text-xs text-slate-500">Jenis Kelamin</label><select name="jenis_kelamin" class="w-full border rounded-lg px-3 py-2 text-sm"><option value="Laki-laki">Laki-laki</option><option value="Perempuan">Perempuan</option></select></div>
                                 <div><label class="text-xs text-slate-500">Agama</label><select name="agama" class="w-full border rounded-lg px-3 py-2 text-sm"><option value="Islam">Islam</option><option value="Kristen">Kristen</option><option value="Katolik">Katolik</option><option value="Hindu">Hindu</option><option value="Budha">Budha</option><option value="Konghucu">Konghucu</option></select></div>
